@@ -1,0 +1,14 @@
+<persistence-unit name="JPAs">
+    <class>hfs301.fe.com.pojo.Student</class>
+    <class>hfs301.fe.com.pojo.Book</class>
+
+    <properties>
+        <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+        <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=tutorial;encrypt=true;trustServerCertificate=true;"/>
+        <property name="javax.persistence.jdbc.user" value="sa"/>
+        <property name="javax.persistence.jdbc.password" value="your_password"/>
+        <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>
+        <property name="hibernate.show_sql" value="true"/>
+        <property name="hibernate.hbm2ddl.auto" value="update"/>
+    </properties>
+</persistence-unit>
